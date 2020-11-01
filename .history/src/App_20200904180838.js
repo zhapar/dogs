@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./Navbar";
-import Routes from "./Routes";
+import { Switch, Route } from "react-router-dom";
 import whiskey from "./images/whiskey.jpg";
 import hazel from "./images/hazel.jpg";
 import tubby from "./images/tubby.jpg";
@@ -43,11 +42,8 @@ class App extends Component {
   };
   render() {
     return (
-      <div>
-        <Navbar dogs={this.props.dogs} />
-        <div className="container">
-          <Routes dogs={this.props.dogs} />
-        </div>
+      <div className="App">
+        <DogList />
       </div>
     );
   }

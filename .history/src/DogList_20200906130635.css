@@ -1,0 +1,21 @@
+.Dog img {
+  width: 75%;
+  border-radius: 50%;
+  filter: grayscale();
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Dog:hover img {
+  filter: none;
+  border: 4px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 10px;
+  position: relative;
+}
